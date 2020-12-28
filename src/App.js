@@ -80,7 +80,7 @@ function App() {
       <br />
       <input {...limitInput} onKeyDown={handleChangeLimit} />
       <div>TotalCount: {data?.employees?.totalCount}</div>
-      <div>TotalPage: {calculateTotalPage}</div>
+      <div>TotalPage: {calculateTotalPage()}</div>
       <button style={{ marginRight: "10px" }} onClick={handleSortByCode}>
         Sort by Code {sortByCode === "ASC" ? <>&uarr;</> : <>&darr;</>}
       </button>
